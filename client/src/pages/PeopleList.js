@@ -39,7 +39,7 @@ const PeopleList = (props) => {
         </tr>
       );
     });
-  }, [people, deletePerson]);
+  }, [people, deletePerson, classes.link]);
 
   return (
     <Appear id='peopleList' animate show={entered}>

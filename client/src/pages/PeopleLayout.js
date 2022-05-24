@@ -24,7 +24,7 @@ const PeopleLayout = (props) => {
 
   useEffect(() => {
     const newFilteredPeople = people.filter((person) => {
-      return person.id == searchIdField;
+      return person.id === searchIdField;
     });
 
     setFilteredPeople(newFilteredPeople);
