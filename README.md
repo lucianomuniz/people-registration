@@ -34,26 +34,30 @@ The phone number;
 
 The routes are prepared for versioning as the project grows and as needed, and were configured to work with the Version 1 (v1).
 
-To access the APIs use the URL: [http://0.0.0.0:8000/](http://0.0.0.0:8000/v1/) or [http://localhost:8000](http://localhost:8000) if the app running on developement mode, and add the routes below after the URL to access the APIs data.
+To access the APIs use the URL: [http://localhost/:8000/](http://localhost/:8000/v1/) or [http://18.231.173.173:8000](http://18.231.173.173:8000) if the app running on developement mode, and add the routes below after the URL to access the APIs data.
 
 The postman scripts, used to test the API routes, is included on the project root folder `people-registration.postman_collection.json`.\
 You can import it on [Postman](https://www.postman.com/).
 
 The routes available are:
 
-### GET [/v1/people/](http://localhost:8000/v1/people/)
+### GET [/v1/people/](http://18.231.173.173:8000/v1/people/)
 
 Lists all people recorded on database.
 
-### POST [/v1/people/](http://localhost:8000/v1/people/)
+### POST [/v1/people/](http://18.231.173.173:8000/v1/people/)
+
+`{ "name": "Marcos Santos", "phones": [ { "ddd": "21", "number": "98456-8741" }, { "ddd": "21", "number": "3021-8541" } ] }`
 
 Inserts the given person in database.
 
-### POST [/v1/people/:id](http://localhost:8000/v1/people/1)
+### POST [/v1/people/:id](http://18.231.173.173:8000/v1/people/1)
+
+`{ "id": 8, "name": "Marcos Santos Ferreira", "phones": [ { "ddd": "21", "number": "98456-0000" } ] }`
 
 Updates the given person in database.
 
-### DELETE [/v1/people/:id](http://localhost:8000/v1/people/2)
+### DELETE [/v1/people/:id](http://18.231.173.173:8000/v1/people/2)
 
 Deletes the given person from database.
 
@@ -96,14 +100,14 @@ Build a Docker image.
 
 ### `docker run -it -p 8000:8000 lucianomuniz/people-registration`
 
-Execute a Docker image container to test the app on localhost.
+Execute a Docker image container to test the app on 18.231.173.173.
 
 ### `docker login`
 
 Login on: [http://hub.docker.com](http://hub.docker.com).\
 And create Docker Hub repository.
 
-### `docker push lucianomuniz/cpeople-registration`
+### `docker push lucianomuniz/people-registration`
 
 Push the image on Docker Hub.
 

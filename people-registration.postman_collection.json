@@ -11,10 +11,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/v1/people/",
+					"raw": "http://18.231.173.173:8000/v1/people/",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"18.231.173.173"
 					],
 					"port": "8000",
 					"path": [
@@ -32,10 +32,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/v1/people/1",
+					"raw": "http://18.231.173.173:8000/v1/people/1",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"18.231.173.173"
 					],
 					"port": "8000",
 					"path": [
@@ -62,10 +62,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/v1/people/",
+					"raw": "http://18.231.173.173:8000/v1/people/",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"18.231.173.173"
 					],
 					"port": "8000",
 					"path": [
@@ -92,10 +92,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/v1/people/8",
+					"raw": "http://18.231.173.173:8000/v1/people/8",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"18.231.173.173"
 					],
 					"port": "8000",
 					"path": [
@@ -113,10 +113,10 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/v1/people/8",
+					"raw": "http://18.231.173.173:8000/v1/people/8",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"18.231.173.173"
 					],
 					"port": "8000",
 					"path": [
