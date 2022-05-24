@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "2bf5dd38-10ec-4aec-a113-a162cb45ceab",
+		"name": "People Registration API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{Get all people}: [GET] /v1/people/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/v1/people/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"people",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{Get people by ID}: [GET] /v1/people/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/v1/people/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"people",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{Insert new person}: [POST] /v1/people/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Marcos Santos\",\r\n    \"phones\": [\r\n        {\r\n            \"ddd\": \"21\",\r\n            \"number\": \"98456-8741\"\r\n        },\r\n        {\r\n            \"ddd\": \"21\",\r\n            \"number\": \"3021-8541\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/v1/people/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"people",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{Update person}: [POST] /v1/people/:id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 8,\r\n    \"name\": \"Marcos Santos Ferreira\",\r\n    \"phones\": [\r\n        {\r\n            \"ddd\": \"21\",\r\n            \"number\": \"98456-0000\"\r\n        },\r\n        {\r\n            \"ddd\": \"21\",\r\n            \"number\": \"0000-0000\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/v1/people/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"people",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{Delete person}: [DELETE] /v1/people/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/v1/people/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"people",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
